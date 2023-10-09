@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    text-align: center;
+}
+.col-1 {
+    width: 6.25%;
+  }
+
+  .col-2 {
+    width: 12.5%;
+  }
+
+  .col-3 {
+    width: 18.75%;
+  }
+
+  .col-4 {
+    width: 25%;
+  }
+
+  .col-5 {
+    width: 31.25%;
+  }
+
+  .col-6 {
+    width: 37.5%;
+  }
+
+  .col-7 {
+    width: 43.75%;
+  }
+
+  .col-8 {
+    width: 50%;
+  }
+
+  .col-9 {
+    width: 56.25%;
+  }
+
+  .col-10 {
+    width: 62.5%;
+  }
+
+  .col-11 {
+    width: 68.75%;
+  }
+
+  .col-12 {
+    width: 75%;
+  }
+  .col-13 {
+    width: 81.25%;
+  }
+  .col-14 {
+    width: 87.5%;
+  }
+  .col-15 {
+    width: 93.75%;
+  }
+  .col-16 {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  img {
+    max-width: 10%;
+    height: auto;
+  }
+  $fontColor:blue;
+  $mar:0 20% 0 20%;
+  .sub-title{
+    color: $fontColor;
+    margin: $mar;
+  }
+  .title{
+    margin: $mar;
+  }
+  @mixin sections-title{
+    color: white;
+    background-color: aqua;
+    margin: 1% 20% 1% 20%;
+    text-align: center;
+  }
+  .section-title1{
+    @include sections-title;
+    background-color:burlywood;
+  }
+  .section-title2{
+    @include sections-title;
+    background-color:chocolate;
+  }
+  .section-title3{
+    @include sections-title;
+    background-color:darkcyan;
+  }
+ 
+  h2 {
+    margin: 1%;
+    
+  }
+  .section-contant{
+    margin: 0% 20% 0% 20%;
+  }
+  h3{
+    margin-top: 5%;
+  }
+  @mixin border{
+    padding: 23%;
+    border-bottom: 0.5rem solid rgb(212, 18, 18);
+
+  }
+  .border1{
+    @include border;
+    border-color:red
+
+  }
+  .border2{
+    @include border;
+    border-color:green
+
+  }
+  .border3{
+    @include border;
+    border-color:blue
+
+  }
+  .border4{
+    @include border
+
+  }
+  @mixin last2s{
+    text-align: start;
+    margin-right: 2.5%;
+  }
+  .ACHIEMENTS{
+    @include last2s;
+  }
+
+ 
+
+  @mixin EXPERERIENCE{
+    @include last2s;
+    margin-bottom: 10px;
+    border-bottom: 0.5rem solid rgb(212, 18, 170);
+    font-size: 20px;
+  }
+  .EXPERERIENCE1{
+    @include EXPERERIENCE;
+    border-color:gold
+  }
+  .EXPERERIENCE2{
+    @include EXPERERIENCE;
+    border-color:blueviolet
+  }
+  .EXPERERIENCE3{
+    @include EXPERERIENCE;
+    
+  }
+  .EXPERERIENCE4{
+    @include EXPERERIENCE;
+    border-color: red
+  }
+  .contantItmes {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .startlast{
+    text-align: start;
+  }
+  meter::-webkit-meter-bar {
+    width: 100px;
+    height: 10px;
+    border-radius: 1px;
+    background: none; /* Required to get rid of the default background property */
+    background-color: whiteSmoke;
+    box-shadow: 0 5px 5px -5px #333 inset;
+  }
+  meter::-webkit-meter-optimum-value {
+    background: linear-gradient(
+      214deg,
+      rgb(195, 37, 103) 20%,
+      rgb(82, 28, 181) 80%
+    );
+  }
+  .lastsection{
+    padding: 2%;
+    background-color: #333;
+    color: white;
+    margin: 3% 15% 3% 15%;
+  }
+ .gry{
+    color: gray;
+ }
